@@ -17,6 +17,8 @@ main {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    font-family: "Poppins", sans-serif;
+
 }
 
 .glass {
@@ -30,7 +32,7 @@ main {
       );
     border-radius: 2rem;
     backdrop-filter: blur(2rem);
-
+    z-index: 2;
     display: flex;
 }
 
@@ -44,6 +46,7 @@ main {
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
+      border-radius: 2rem;
     
 }
 
@@ -59,7 +62,8 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
+    row-gap: 0.8rem;
 }
 
 .popup {
@@ -69,11 +73,115 @@ main {
     justify-content: space-evenly;
     padding: 1.5rem;
     color: white;
-    border-radius: 8rem;
+    border-radius: 6rem;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    position: relative;
+}
+
+.fa-2xl  {
+    font-size: 3rem;
 }
 
 .popup h2 {
     width: 40%;
     font-weight: 600;
+}
+
+.circle1 {
+    background: white;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+    position: absolute;
+}
+
+.circle3 {
+    background: white;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    position: absolute; 
+}
+
+.circle2 {
+    background: white;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    position: absolute; 
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 6%;
+    left: 16%;
+}
+
+.circle3 {
+    top: 4%;
+    right: 60%;
+}
+
+/* Etch a Sketch */ 
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    width: 80%;
+    background-color: rgba(218, 201, 201, 0.753);
+}
+
+.ui-container  {
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-wrapper {
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.button-wrapper {
+    margin-right: 28rem;
+}
+
+.button { 
+    padding: 0.5em;
+    margin: 1em;
+    font-size: 1em;
+    letter-spacing: 0.08em;
+    background-color: #fffbffcf;
+    border: 1px solid  rgba(0, 0, 0, 0.284);
+    border-radius: 1rem;
+}
+
+.button:hover {
+    background-color: rgba(230, 229, 229, 0.95);
+}
+
+
+.main-grid-container {
+    background-color: black;
 }
